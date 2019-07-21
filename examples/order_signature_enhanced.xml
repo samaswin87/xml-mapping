@@ -6,4 +6,5 @@
     <month>2</month>
     <year>2005</year>
   </signed-on>
+  <user-sign previous="John Doe">Doe John</user-sign>
 </Signature>
