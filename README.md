@@ -47,7 +47,26 @@ semi-automatically map Ruby objects to XML trees and vice versa.
         <UnitPrice>42.23</UnitPrice>
     </item>
 
+### Attribute text node
 
+If you have a text node with attributes like,
+
+    <user-sign previous="John Doe">Doe John</user-sign>
+   
+Map the text node as below,
+
+    attribute_text_node :signature, "user-sign", :default_value => nil
+    
+To get the current text value,
+
+    s.signature.txt
+    
+previous attribute,
+
+    s.signature.previous
+    
+  
+    
 
 This is the most trivial example -- the mapper supports arbitrary
 array and hash (map) nodes, object (reference) nodes and arrays/hashes
